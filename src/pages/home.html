@@ -1,0 +1,666 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="../output.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex justify-between items-center h-20">
+
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-blue-600">
+                    MyShop
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium">
+                        Home
+                    </a>
+
+                    <a href="#product" class="text-gray-700 hover:text-blue-600 font-medium">
+                        Product
+                    </a>
+
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">
+                        About
+                    </a>
+
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium">
+                        Contact
+                    </a>
+
+                </div>
+
+                <!-- Login & Register -->
+                <div class="hidden md:flex items-center space-x-4">
+
+                    <a href="#login"
+                        class="px-5 py-2 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition">
+                        Login
+                    </a>
+
+                    <a href="#register"
+                        class="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                        Register
+                    </a>
+
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+                    <label for="menu-toggle" class="cursor-pointer text-gray-700 text-3xl">
+                        ☰
+                    </label>
+
+                    <!-- Mobile Dropdown -->
+                    <div
+                        class="hidden peer-checked:flex flex-col absolute left-0 top-20 w-full bg-white shadow-lg p-5 space-y-4 z-50">
+
+                        <a href="#home" class="text-gray-700 hover:text-blue-600">
+                            Home
+                        </a>
+
+                        <a href="#product" class="text-gray-700 hover:text-blue-600">
+                            Product
+                        </a>
+
+                        <a href="#about" class="text-gray-700 hover:text-blue-600">
+                            About
+                        </a>
+
+                        <a href="#contact" class="text-gray-700 hover:text-blue-600">
+                            Contact
+                        </a>
+
+                        <hr>
+
+                        <a href="#login" class="text-center px-4 py-2 border border-blue-600 text-blue-600 rounded-lg">
+                            Login
+                        </a>
+
+                        <a href="#register" class="text-center px-4 py-2 bg-blue-600 text-white rounded-lg">
+                            Register
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Hero section -->
+    <section class="min-h-screen">
+        <button class="md:hidden text-2xl text-gray-700">
+            ☰
+        </button>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="container mx-auto px-6 md:px-16 py-16 md:py-24">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <!-- Left Content -->
+                <div>
+                    <span
+                        class="inline-block bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        ✨ New Collection 2026
+                    </span>
+
+                    <h2 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                        Discover Your
+                        <span class="text-purple-600">Perfect Style</span>
+                    </h2>
+
+                    <p class="text-gray-500 text-lg leading-relaxed mb-8 max-w-lg">
+                        Explore our latest collection of trendy products.
+                        Find your favorite styles and enjoy an amazing
+                        online shopping experience.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4">
+                        <button
+                            class="bg-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-purple-700 transition">
+                            Shop Now →
+                        </button>
+
+                        <button
+                            class="border border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition">
+                            Explore More
+                        </button>
+                    </div>
+
+                    <!-- Statistics -->
+                    <div class="flex gap-10 mt-12">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">10K+</h3>
+                            <p class="text-gray-500 text-sm">Customers</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">500+</h3>
+                            <p class="text-gray-500 text-sm">Products</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">4.9★</h3>
+                            <p class="text-gray-500 text-sm">Rating</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="relative">
+                    <div class="absolute inset-0 bg-purple-200 rounded-full blur-3xl opacity-40"></div>
+
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900"
+                        alt="Online shopping collection"
+                        class="relative w-full h-[400px] md:h-[500px] object-cover rounded-3xl shadow-xl" />
+
+                    <div class="absolute bottom-6 left-6 bg-white p-4 rounded-xl shadow-lg">
+                        <p class="text-gray-500 text-sm">Special Offer</p>
+                        <h3 class="text-xl font-bold text-purple-600">Up to 30% OFF</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Category Section -->
+    <section class="py-20 px-6 md:px-14 bg-white">
+
+        <!-- Heading -->
+        <div class="text-center mb-10">
+            <span class="text-purple-600 font-semibold uppercase tracking-wider text-sm">
+                Our Categories
+            </span>
+
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3">
+                Shop By Category
+            </h2>
+
+            <p class="text-gray-500 mt-4 max-w-xl mx-auto">
+                Explore our wide range of categories and find
+                everything you need in one place.
+            </p>
+        </div>
+
+        <!-- Category Cards -->
+        <div  id="categories-container" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<!-- 
+            
+            <a id="category-1" href="#Shoes"
+                class="group bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Shoes"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition duration-500" />
+                </div>
+                <div class="p-5 text-center">
+                    <h3 class="text-lg font-bold text-gray-900 group-hover:text-purple-600">
+                        Shoes
+                    </h3>
+                    <p class="text-gray-500 text-sm mt-2">Explore Collection →</p>
+                </div>
+            </a>
+
+            
+            <a id="category-2" href="#Fashion"
+                class="group bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=500" alt="Fashion"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition duration-500" />
+                </div>
+                <div class="p-5 text-center">
+                    <h3 class="text-lg font-bold text-gray-900 group-hover:text-purple-600">
+                        Fashion
+                    </h3>
+                    <p class="text-gray-500 text-sm mt-2">Explore Collection →</p>
+                </div>
+            </a>
+
+            
+            <a id="category-3"href="#Electronics"
+                class="group bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Electronics"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition duration-500" />
+                </div>
+                <div class="p-5 text-center">
+                    <h3 class="text-lg font-bold text-gray-900 group-hover:text-purple-600">
+                        Electronics
+                    </h3>
+                    <p class="text-gray-500 text-sm mt-2">Explore Collection →</p>
+                </div>
+            </a>
+
+        
+            <a id="category-4" href="#Accessories"
+                class="group bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500" alt="Accessories"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition duration-500" />
+                </div>
+                <div class="p-5 text-center">
+                    <h3 class="text-lg font-bold text-gray-900 group-hover:text-purple-600">
+                        Accessories
+                    </h3>
+                    <p class="text-gray-500 text-sm mt-2">Explore Collection →</p>
+                </div>
+            </a> 
+ -->
+        </div>
+
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="py-20 px-6 md:px-16 bg-gray-50">
+
+        <!-- Section Heading -->
+        <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-5">
+
+            <div>
+                <span class="text-purple-600 font-semibold uppercase tracking-wider text-sm">
+                    Our Products
+                </span>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3">
+                    Featured Products
+                </h2>
+
+                <p class="text-gray-500 mt-3">
+                    Discover our best-selling and latest products.
+                </p>
+            </div>
+
+            <a href="#" class="bg-purple-600 text-white px-6 py-3 rounded-xl hover:bg-purple-700 transition">
+                View All Products →
+            </a>
+
+        </div>
+
+        <!-- Products Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+            <!-- Product 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600" alt="Watch"
+                        class="w-full h-52 object-cover group-hover:scale-110 transition duration-500" />
+
+                    <span class="absolute top-3 left-3 bg-red-500 text-white text-xs px-3 py-1 rounded-full">
+                        -20%
+                    </span>
+
+                    <button class="absolute top-3 right-3 bg-white rounded-full w-9 h-9 shadow hover:text-red-500">
+                        ♡
+                    </button>
+                </div>
+
+                <div class="p-4">
+                    <p class="text-gray-400 text-sm">Accessories</p>
+                    <h3 class="font-bold text-gray-900 mt-1">Classic Wrist Watch</h3>
+                    <div class="text-yellow-400 text-sm mt-2">★★★★★ <span class="text-gray-400">(4.8)</span></div>
+
+                    <div class="flex items-center gap-2 mt-3">
+                        <span class="text-purple-600 font-bold text-lg">$45.00</span>
+                        <span class="text-gray-400 line-through text-sm">$56.00</span>
+                    </div>
+
+                    <button
+                        class="w-full mt-4 bg-purple-600 text-white py-2.5 rounded-lg hover:bg-purple-700 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=600" alt="Headphones"
+                        class="w-full h-52 object-cover group-hover:scale-110 transition duration-500" />
+
+                    <span class="absolute top-3 left-3 bg-green-500 text-white text-xs px-3 py-1 rounded-full">
+                        New
+                    </span>
+
+                    <button class="absolute top-3 right-3 bg-white rounded-full w-9 h-9 shadow hover:text-red-500">
+                        ♡
+                    </button>
+                </div>
+
+                <div class="p-4">
+                    <p class="text-gray-400 text-sm">Electronics</p>
+                    <h3 class="font-bold text-gray-900 mt-1">Wireless Headphones</h3>
+                    <div class="text-yellow-400 text-sm mt-2">★★★★★ <span class="text-gray-400">(4.9)</span></div>
+
+                    <div class="flex items-center gap-2 mt-3">
+                        <span class="text-purple-600 font-bold text-lg">$35.00</span>
+                        <span class="text-gray-400 line-through text-sm">$45.00</span>
+                    </div>
+
+                    <button
+                        class="w-full mt-4 bg-purple-600 text-white py-2.5 rounded-lg hover:bg-purple-700 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600" alt="Handbag"
+                        class="w-full h-52 object-cover group-hover:scale-110 transition duration-500" />
+
+                    <span class="absolute top-3 left-3 bg-red-500 text-white text-xs px-3 py-1 rounded-full">
+                        -15%
+                    </span>
+
+                    <button class="absolute top-3 right-3 bg-white rounded-full w-9 h-9 shadow hover:text-red-500">
+                        ♡
+                    </button>
+                </div>
+
+                <div class="p-4">
+                    <p class="text-gray-400 text-sm">Fashion</p>
+                    <h3 class="font-bold text-gray-900 mt-1">Elegant Leather Bag</h3>
+                    <div class="text-yellow-400 text-sm mt-2">★★★★★ <span class="text-gray-400">(4.7)</span></div>
+
+                    <div class="flex items-center gap-2 mt-3">
+                        <span class="text-purple-600 font-bold text-lg">$55.00</span>
+                        <span class="text-gray-400 line-through text-sm">$65.00</span>
+                    </div>
+
+                    <button
+                        class="w-full mt-4 bg-purple-600 text-white py-2.5 rounded-lg hover:bg-purple-700 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600" alt="Speaker"
+                        class="w-full h-52 object-cover group-hover:scale-110 transition duration-500" />
+
+                    <span class="absolute top-3 left-3 bg-green-500 text-white text-xs px-3 py-1 rounded-full">
+                        New
+                    </span>
+
+                    <button class="absolute top-3 right-3 bg-white rounded-full w-9 h-9 shadow hover:text-red-500">
+                        ♡
+                    </button>
+                </div>
+
+                <div class="p-4">
+                    <p class="text-gray-400 text-sm">Electronics</p>
+                    <h3 class="font-bold text-gray-900 mt-1">Premium Audio Device</h3>
+                    <div class="text-yellow-400 text-sm mt-2">★★★★★ <span class="text-gray-400">(4.8)</span></div>
+
+                    <div class="flex items-center gap-2 mt-3">
+                        <span class="text-purple-600 font-bold text-lg">$40.00</span>
+                        <span class="text-gray-400 line-through text-sm">$50.00</span>
+                    </div>
+
+                    <button
+                        class="w-full mt-4 bg-purple-600 text-white py-2.5 rounded-lg hover:bg-purple-700 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Shopping Benefits Section -->
+    <section class="py-20 px-6 md:px-16 bg-white">
+
+        <!-- Heading -->
+        <div class="text-center mb-14">
+            <span class="text-purple-600 font-semibold uppercase tracking-wider text-sm">
+                Why Choose Us
+            </span>
+
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3">
+                Shopping Benefits
+            </h2>
+
+            <p class="text-gray-500 mt-4 max-w-xl mx-auto">
+                We make your shopping experience easy, safe,
+                and enjoyable with our special services.
+            </p>
+        </div>
+
+        <!-- Benefits Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Benefit 1 -->
+            <div
+                class="text-center p-8 rounded-2xl bg-gray-50 hover:bg-purple-50 hover:shadow-lg transition duration-300 group">
+
+                <div
+                    class="w-20 h-20 mx-auto flex items-center justify-center rounded-full bg-purple-100 text-purple-600 text-4xl group-hover:bg-purple-600 group-hover:text-white transition">
+                    🚚
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-900 mt-6">
+                    Free Shipping
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-relaxed mt-3">
+                    Enjoy free delivery on orders above $50.
+                    Get your favorite products delivered to your door.
+                </p>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div
+                class="text-center p-8 rounded-2xl bg-gray-50 hover:bg-purple-50 hover:shadow-lg transition duration-300 group">
+
+                <div
+                    class="w-20 h-20 mx-auto flex items-center justify-center rounded-full bg-purple-100 text-purple-600 text-4xl group-hover:bg-purple-600 group-hover:text-white transition">
+                    🔒
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-900 mt-6">
+                    Secure Payment
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-relaxed mt-3">
+                    Your payment information is protected
+                    with safe and secure payment methods.
+                </p>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div
+                class="text-center p-8 rounded-2xl bg-gray-50 hover:bg-purple-50 hover:shadow-lg transition duration-300 group">
+
+                <div
+                    class="w-20 h-20 mx-auto flex items-center justify-center rounded-full bg-purple-100 text-purple-600 text-4xl group-hover:bg-purple-600 group-hover:text-white transition">
+                    🔄
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-900 mt-6">
+                    Easy Returns
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-relaxed mt-3">
+                    Not satisfied with your purchase?
+                    Enjoy our simple and easy return policy.
+                </p>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div
+                class="text-center p-8 rounded-2xl bg-gray-50 hover:bg-purple-50 hover:shadow-lg transition duration-300 group">
+
+                <div
+                    class="w-20 h-20 mx-auto flex items-center justify-center rounded-full bg-purple-100 text-purple-600 text-4xl group-hover:bg-purple-600 group-hover:text-white transition">
+                    🎧
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-900 mt-6">
+                    24/7 Support
+                </h3>
+
+                <p class="text-gray-500 text-sm leading-relaxed mt-3">
+                    Our friendly support team is always
+                    ready to help you with your questions.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white pt-16 pb-6 px-6 md:px-16">
+
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Footer Main Content -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12">
+
+                <!-- Shop Information -->
+                <div>
+                    <h2 class="text-3xl font-bold text-purple-500">
+                        Shop<span class="text-white">Now.</span>
+                    </h2>
+
+                    <p class="text-gray-400 mt-5 leading-relaxed">
+                        Discover the best products at affordable prices.
+                        Enjoy easy, safe and convenient online shopping
+                        with ShopNow.
+                    </p>
+
+                    <!-- Social Media -->
+                    <div class="flex gap-3 mt-6">
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-purple-600 transition">
+                            f
+                        </a>
+
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-purple-600 transition">
+                            𝕏
+                        </a>
+
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-purple-600 transition">
+                            ◎
+                        </a>
+
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-purple-600 transition">
+                            ▶
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="#" class="hover:text-purple-400 transition">Home</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition">Products</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition">Categories</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Customer Service</h3>
+
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="#" class="hover:text-purple-400 transition">My Account</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition">Shopping Cart</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition">Order Tracking</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact Us</h3>
+
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex gap-3">
+                            <span class="text-purple-400">✉</span>
+                            <span>support@shopnow.com</span>
+                        </li>
+
+                        <li class="flex gap-3">
+                            <span class="text-purple-400">☎</span>
+                            <span>+95 9 123 456 789</span>
+                        </li>
+
+                        <li class="flex gap-3">
+                            <span class="text-purple-400">⌖</span>
+                            <span>Yangon, Myanmar</span>
+                        </li>
+                    </ul>
+
+                    <!-- Newsletter -->
+                    <h3 class="font-bold mt-7 mb-3">Newsletter</h3>
+
+                    <div class="flex">
+                        <input type="email" placeholder="Your email address"
+                            class="w-full min-w-0 px-3 py-3 rounded-l-lg bg-gray-800 text-white outline-none border border-gray-700 focus:border-purple-500" />
+
+                        <button class="bg-purple-600 px-4 rounded-r-lg hover:bg-purple-700 transition">
+                            →
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 pt-6">
+
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+                    <p class="text-gray-400 text-sm text-center">
+                        © 2026 ShopNow. All Rights Reserved.
+                    </p>
+
+                    <div class="flex gap-6 text-sm text-gray-400">
+                        <a href="#" class="hover:text-purple-400">Privacy Policy</a>
+                        <a href="#" class="hover:text-purple-400">Terms</a>
+                        <a href="#" class="hover:text-purple-400">Help</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+<script src="../Js/categories.js"></script>
+
+</body>
+
+</html>
