@@ -1,5 +1,5 @@
-import { products } from './products.js';
 
+import { products } from "./product";
 
 const categories = [...new Set(products.map((p) => p.category))].map((category) => ({
     name: category,
@@ -14,7 +14,7 @@ categories.forEach((category) => {
     categoryContainer.innerHTML +=
         ` <a
             href="#beauty"
-            class="group flex aspect-square items-center justify-center
+            class="group flex  items-center justify-center
                   rounded-2xl border border-gray-200 bg-gray-50 p-6
                   transition-all duration-300
                   hover:-translate-y-1 hover:border-gray-300
@@ -50,6 +50,9 @@ products.forEach((p) => {
                 <p class="text-xl font-bold text-blue-600 mt-3">
                   $${p.price.toFixed(2)}
                 </p>
+              </div>
+              <div class="w-full flex justify-center">
+              <button>Add to Cart</button>
               </div>
             </div>`;
 });
