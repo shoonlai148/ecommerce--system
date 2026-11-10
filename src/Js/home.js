@@ -1,5 +1,5 @@
 
-import { products } from "./product";
+import { products } from "./product.js";
 
 const categories = [...new Set(products.map((p) => p.category))].map((category) => ({
     name: category,
